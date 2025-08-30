@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LinkedIn</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .outer {
+            width: 100dvw;
+            height: 190dvh;
+            background-color: rgb(248, 242, 243);
+            overflow: scroll;
+            scrollbar-width: none;
+            display: flex;
+
+
+
+        }
+
+        .up {
+            position: fixed;
+            width: 100dvw;
+            height: 4dvw;
+
+
+
+
+        }
+
+        .left {
+            /* background-color:white; */
+            position: fixed;
+            margin-top: 7dvw;
+            margin-left: 27dvh;
+            width: 15dvw;
+            height: 80dvh;
+
+
+        }
+
+        .left i {
+            color: black;
+        }
+
+        .one {
+            width: 15dvw;
+            height: 27dvh;
+            border: 1px solid black;
+            border-radius: 2dvh;
+            color: black;
+        }
+
+
+        .two {
+            /* width: 13dvw; */
+            height: 11dvh;
+            margin: 20px 0px 0px 0px;
+            color: black;
+            /* background-color: blueviolet; */
+
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .three {
+            /* width: 13dvw; */
+            height: 9dvh;
+            margin: 10px 0px 0px 0px;
+            /* background-color: rgb(24, 217, 72); */
+            color: black;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .four {
+            /* width: 13dvw; */
+            height: 24dvh;
+            margin: 10px 0px 0px 0px;
+            /* background-color: black; */
+            border-radius: 2dvh;
+            color: rgb(12, 12, 12);
+            border: 1px solid black;
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .four i {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 17px;
+
+        }
+
+        .four p {
+            font-size: 17px;
+            margin: 5px;
+        }
+
+        .three p {
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .three h5 {
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6px;
+        }
+
+        .a {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: start;
+            align-items: center;
+
+        }
+
+        .a h3 {
+            font-size: 21px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 10px 73px 8px 10px;
+
+        }
+
+        .a p {
+            color: #00bfff;
+        }
+
+        .two p {
+            font-size: 17px;
+            margin-left: 10px;
+        }
+
+        .c h2 {
+            color: black;
+
+            display: flex;
+            justify-content: start;
+            align-items: start;
+
+            padding-bottom: 4px;
+            padding-left: 30px;
+        }
+
+        .c h3 {
+            color: black;
+            font-size: 14px;
+            padding-left: 30px;
+
+        }
+
+        .c h5 {
+            color: black;
+            padding: 8px;
+            padding-left: 30px;
+            font-size: 14px;
+            padding-bottom: 4px;
+        }
+
+        .c h6 {
+            color: black;
+            padding-left: 30px;
+            font-size: 14px;
+            padding-top: 4px;
+            margin-bottom: 10px;
+
+        }
+
+        .b p {
+            color: white;
+            font-size: 60px;
+            padding-top: 7px;
+            padding-left: 23px;
+        }
+
+        .right {
+            /* background-color: rgb(35, 232, 17); */
+            height: 126dvh;
+            width: 23dvw;
+            display: flex;
+            /* flex-direction: column; */
+
+            margin-top: 8dvw;
+            margin-left: 2vw;
+
+
+        }
+
+        .rights {
+            height: 83dvh;
+            width: 23dvw;
+            /* background-color: rgb(233, 37, 7); */
+            margin-bottom: 10px;
+
+            border: 1px solid black;
+            border-radius: 15px;
+
+        }
+
+        .rights h1 {
+            margin: 15px;
+        }
+
+        .rights p {
+            color: rgb(199, 195, 195);
+            margin: 0px 0px 0px 15px;
+
+
+        }
+
+        .rights h4 {
+            font-size: 17px;
+            margin: 10px 0px 0px 15px;
+
+        }
+
+        .rights h5 {
+            font-size: 18px;
+            margin: 13px 0px 0px 15px;
+        }
+
+        .rights h6 {
+            font-size: 16px;
+            margin: 10px 0px 0px 15px;
+        }
+
+        .xx {
+            display: flex;
+            /* flex-direction:column; */
+            align-items: start;
+            justify-content: start;
+        }
+
+        .x {
+            background-color: black;
+            margin: 10px;
+            width: 7dvw;
+            height: 10dvh;
+            /* background-size: cover; */
+
+
+        }
+
+        .ss {
+            width: 100%;
+            height: 100%;
+        }
+
+        .y {
+            background-color: black;
+            margin: 10px;
+            width: 7dvw;
+            height: 10dvh;
+        }
+
+        .xx h3 {
+            color: black;
+            margin-top: 3px;
+            margin-left: 16px;
+
+        }
+
+        .xx h6 {
+            margin-top: 0px;
+            font-size: 15px;
+        }
+
+        .yy {
+            display: flex;
+
+            align-items: start;
+            justify-content: start;
+        }
+
+        .yy h3 {
+            color: black;
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+
+        .yy h6 {
+            margin-top: 3px;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        .yy p {
+            font-size: 14px;
+        }
+
+        .xx h1 {
+            font-size: 38px;
+            margin-left: 40px;
+        }
+
+        .yy h1 {
+            font-size: 38px;
+            margin-left: 55px;
+        }
+
+        .sa {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: start;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .pa {
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .sa p {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px;
+        }
+
+        .sa i {
+            font-size: 70px;
+        }
+
+        .tan p {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .ta p {
+            font-size: 12px;
+        }
+
+        .h {
+            font-size: 20px;
+            margin: 12px;
+        }
+
+        .ha {
+            font-size: 24px;
+            color: #00bfff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #00bfff;
+            width: 10dvw;
+            border-radius: 15px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+
+        }
+
+        .q {
+            font-size: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px 0px 0px;
+            border: 1px solid black;
+            height: 7dvh;
+            border-radius: 15px;
+        }
+
+        .cs {
+            border: 1px solid black;
+            /* position: sticky;
+            top: 0px; */
+            /* background-color: #6A82FB; */
+            border-radius: 15px;
+        }
+
+        .three p {
+            color: rgba(180, 178, 175, 0.666);
+        }
+
+        .main {
+            background-color: white;
+            width: 20%;
+            height: 3dvh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 55px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        .f {
+
+            width: 15dvw;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4dvh;
+
+
+        }
+
+        .s {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .upl {
+            width: 4dvw;
+            height: 6dvh;
+            margin: 4px 10px 0px 170px;
+            /* background-color: white; */
+        }
+
+        .ll {
+            width: 100%;
+            height: 100%;
+        }
+
+        .up {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: white;
+        }
+
+        .upm {
+            font-size: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 19px;
+        }
+
+        .upm i {
+            margin: 5px;
+
+        }
+
+        .upr p {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 13px;
+            font-size: 17px;
+        }
+
+        .upr i {
+            font-size: 24px;
+            margin: 2px;
+
+        }
+
+        .upp p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+
+        .upp p {
+            height: 45px;
+            margin: 10px;
+        }
+
+        .upm p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            margin: 10px;
+        }
+
+        .center {
+            width: 35dvw;
+            background-color: rgb(248, 242, 243);
+            /* position: relative; */
+            margin-left: 31dvw;
+            margin-top: 8dvw;
+            /* height: 173dvh; */
+
+
+
+        }
+
+        .cu {
+            height: 16dvh;
+            width: 32dvw;
+            margin: -15px 23px 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .o {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: start;
+            margin: 15px;
+
+        }
+
+        .o p {
+            font-size: 45px;
+
+        }
+
+        .o h2 {
+            border: 1px solid rgb(16, 15, 15);
+            border-radius: 15px;
+            width: 27dvw;
+            height: 6dvh;
+            margin: 0px;
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .oo {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .oo i {
+            margin: 0px 5px 0px 68px;
+            font-size: 23px;
+        }
+
+        .oo p:hover {
+            color: aliceblue;
+
+        }
+
+        .cd {
+            background-color: rgb(255, 255, 255);
+            /* height: 80dvh; */
+            width: 32dvw;
+            /* height: 150dvh; */
+            margin: 20px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            border: 1px solid black;
+            border-radius: 15px;
+
+        }
+
+        .q {
+            /* position: sticky;
+            top: 0; */
+            /* background-color: #6A82FB; */
+        }
+
+        .sr {
+
+            padding-top: 60px;
+            margin-top: 10px;
+            height: 312px;
+            width: 23dvw;
+            display: flex;
+            flex-direction: column;
+            margin-top: 48dvw;
+
+            margin-left: -23dvw;
+            position: sticky;
+            top: 0;
+
+            /* background-color: #da0707; */
+        }
+
+        .qa {
+            width: 100%;
+            height: 70%;
+        }
+
+        .cdu {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: start;
+            justify-content: start;
+            margin: 10px;
+            width: 4dvw;
+            background-color: #00bfff;
+        }
+
+        .tum {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: start;
+            justify-content: start;
+            margin: 10px 0px 0px 0px;
+            /* background-color:rgb(203, 26, 26); */
+            width: 100%;
+        }
+
+        .cdu p {
+            /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+            margin: 10px;
+        }
+
+        .pa {
+            height: 25px;
+            width: 25px;
+        }
+
+        .cddu {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .tum h1 {
+            margin: 10px 0px 0px 25px;
+            font-size: 17px;
+        }
+
+        .jj {
+            margin: 10px;
+        }
+
+        .ic {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            margin: 7px;
+
+        }
+
+        .ic p {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            /* background-color: black; */
+            width: 95px;
+            height: 28px;
+            transition: 0.5s all ease;
+            border-radius: 5px;
+            cursor: pointer;
+
+            margin: 0px 0px 7px 20px;
+        }
+
+        .ic :hover {
+            background-color: rgb(165, 170, 174);
+        }
+
+        .mm {
+            background: #bdc3c7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            width: 15dvw;
+            height: 8dvh;
+            border-radius: 15px 15px 0px 0px;
+            margin-bottom: -35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+
+
+
+        <div class="up">
+            <div class="upl">
+                <img class="ll" src="lll.png" alt="">
+
+            </div>
+
+            <div class="main">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://www.google.com/search" class="f">
+                    <input class="s" type="text" placeholder="Search " name="q" id="">
+                </form>
+
+            </div>
+            <div class="upm">
+                <p><i class="fa-solid fa-house-chimney-user"></i>Home</p>
+                <p><i class="fa-solid fa-network-wired"></i>My Network</p>
+                <p><i class="fa-solid fa-briefcase"></i>Jobs</p>
+                <p><i class="fa-solid fa-message"></i>Messaging</p>
+                <p><i class="fa-solid fa-bell"></i>Notifications</p>
+                <p><i class="fa-solid fa-circle-info"></i>Me</p>
+            </div>
+            <div class="upr">
+                <p><i class="fa-solid fa-bars"></i>For Business</p>
+
+            </div>
+            <div class="upp">
+                <p><img class="pa" src="p.png" alt=""> Try Premium for $0</p>
+            </div>
+
+
+
+        </div>
+        <div class="left">
+            <div class="one">
+                <div class="b">
+                    <div class="mm">
+
+                    </div>
+                    <p><i class="fa-solid fa-circle-user"></i></p>
+                </div>
+                <div class="c">
+                    <h2>Sara</h2>
+                    <h3>Student</h3>
+                    <h5>Hyderabad,Telangana</h5>
+                    <h6>SNIST</h6>
+                </div>
+            </div>
+            <div class="two">
+                <div class="a">
+                    <h3>Connections </h3>
+                    <p>15</p>
+                </div>
+                <p>Connections with alumni</p>
+            </div>
+            <div class="three">
+                <p>Unlock premium tools and insights</p>
+                <h5>Try premium for $0</h5>
+            </div>
+            <div class="four">
+                <p><i class="fa-solid fa-bookmark"></i>Saved Items</p>
+                <p><i class="fa-solid fa-people-group"></i>Groups</p>
+                <p><i class="fa-solid fa-newspaper"></i>Newsletters</p>
+                <p><i class="fa-solid fa-calendar-days"></i>Events</p>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="cu">
+                <div class="o">
+                    <p><i class="fa-solid fa-circle-info"></i></p>
+                    <h2>Start a post</h2>
+                </div>
+                <div class="oo">
+                    <p><i class="fa-solid fa-video" style="color: #510ee0;"></i>Video</p>
+                    <p><i class="fa-solid fa-photo-film" style="color: #da0707;"></i>Photo</p>
+                    <p><i class="fa-solid fa-newspaper" style="color: #74C0FC;"></i>Write Article</p>
+                </div>
+
+            </div>
+            <div class="cd">
+                <div class="tum">
+                    <div class="cdu">
+                        <img class="qa" src="snist.png" alt="">
+
+
+                    </div>
+
+
+                    <div class="cddu">
+                        <h4>Sreenidhi Institute of Science and Technology</h4>
+                        <p>25278 followers</p>
+                        <p>2h . Edited</p>
+                    </div>
+
+                    <h1><i class="fa-solid fa-ellipsis"></i></h1>
+
+
+                    <h1><i class="fa-solid fa-xmark"></i></h1>
+
+                </div>
+                <div class="jj">
+                    <p>Confluence – HR Leaders 2025</p>
+                    <p>Future of AI Across Industry Streams in India and Its Impact on the Economy
+
+                        On 30th August 2025 (9:30 AM – 1:00 PM, Seminar Hall 1), SNIST’s Career Development Center
+                        convenes top HR leaders and decision-makers to discuss how AI is reshaping industries,
+                        transforming workforce strategies, and driving India’s economic growth…more</p>
+                    <img class="ss" src="cc.png" alt="">
+                </div>
+                <div class="ic">
+                    <p><i class="fa-regular fa-thumbs-up"></i>Like</p>
+
+                    <p><i class="fa-solid fa-comment-dots"></i>Comment</p>
+
+                    <p><i class="fa-solid fa-repeat"></i>Repost
+                    </p>
+                    <p><i class="fa-solid fa-paper-plane"></i>Send</p>
+                </div>
+
+            </div>
+
+            <div class="cd">
+                <div class="tum">
+                    <div class="cdu">
+                        <img class="qa" src="snist.png" alt="">
+
+
+                    </div>
+
+
+                    <div class="cddu">
+                        <h4>Sreenidhi Institute of Science and Technology</h4>
+                        <p>25278 followers</p>
+                        <p>2h . Edited</p>
+                    </div>
+
+                    <h1><i class="fa-solid fa-ellipsis"></i></h1>
+
+
+                    <h1><i class="fa-solid fa-xmark"></i></h1>
+
+                </div>
+                <div class="jj">
+                    <p>Confluence – HR Leaders 2025</p>
+                    <p>Future of AI Across Industry Streams in India and Its Impact on the Economy
+
+                        On 30th August 2025 (9:30 AM – 1:00 PM, Seminar Hall 1), SNIST’s Career Development Center
+                        convenes top HR leaders and decision-makers to discuss how AI is reshaping industries,
+                        transforming workforce strategies, and driving India’s economic growth…more</p>
+                    <img class="ss" src="cc.png" alt="">
+                </div>
+                <div class="ic">
+                    <p><i class="fa-regular fa-thumbs-up"></i>Like</p>
+
+                    <p><i class="fa-solid fa-comment-dots"></i>Comment</p>
+
+                    <p><i class="fa-solid fa-repeat"></i>Repost
+                    </p>
+                    <p><i class="fa-solid fa-paper-plane"></i>Send</p>
+                </div>
+
+            </div>
+
+            <div class="cd">
+                <div class="tum">
+                    <div class="cdu">
+                        <img class="qa" src="snist.png" alt="">
+
+
+                    </div>
+
+
+                    <div class="cddu">
+                        <h4>Sreenidhi Institute of Science and Technology</h4>
+                        <p>25278 followers</p>
+                        <p>2h . Edited</p>
+                    </div>
+
+                    <h1><i class="fa-solid fa-ellipsis"></i></h1>
+
+
+                    <h1><i class="fa-solid fa-xmark"></i></h1>
+
+                </div>
+                <div class="jj">
+                    <p>Confluence – HR Leaders 2025</p>
+                    <p>Future of AI Across Industry Streams in India and Its Impact on the Economy
+
+                        On 30th August 2025 (9:30 AM – 1:00 PM, Seminar Hall 1), SNIST’s Career Development Center
+                        convenes top HR leaders and decision-makers to discuss how AI is reshaping industries,
+                        transforming workforce strategies, and driving India’s economic growth…more</p>
+                    <img class="ss" src="cc.png" alt="">
+                </div>
+                <div class="ic">
+                    <p><i class="fa-regular fa-thumbs-up"></i>Like</p>
+
+                    <p><i class="fa-solid fa-comment-dots"></i>Comment</p>
+
+                    <p><i class="fa-solid fa-repeat"></i>Repost
+                    </p>
+                    <p><i class="fa-solid fa-paper-plane"></i>Send</p>
+                </div>
+
+            </div>
+
+            <div class="cd">
+                <div class="tum">
+                    <div class="cdu">
+                        <img class="qa" src="snist.png" alt="">
+
+
+                    </div>
+
+
+                    <div class="cddu">
+                        <h4>Sreenidhi Institute of Science and Technology</h4>
+                        <p>25278 followers</p>
+                        <p>2h . Edited</p>
+                    </div>
+
+                    <h1><i class="fa-solid fa-ellipsis"></i></h1>
+
+
+                    <h1><i class="fa-solid fa-xmark"></i></h1>
+
+                </div>
+                <div class="jj">
+                    <p>Confluence – HR Leaders 2025</p>
+                    <p>Future of AI Across Industry Streams in India and Its Impact on the Economy
+
+                        On 30th August 2025 (9:30 AM – 1:00 PM, Seminar Hall 1), SNIST’s Career Development Center
+                        convenes top HR leaders and decision-makers to discuss how AI is reshaping industries,
+                        transforming workforce strategies, and driving India’s economic growth…more</p>
+                    <img class="ss" src="cc.png" alt="">
+                </div>
+                <div class="ic">
+                    <p><i class="fa-regular fa-thumbs-up"></i>Like</p>
+
+                    <p><i class="fa-solid fa-comment-dots"></i>Comment</p>
+
+                    <p><i class="fa-solid fa-repeat"></i>Repost
+                    </p>
+                    <p><i class="fa-solid fa-paper-plane"></i>Send</p>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="right">
+
+            <div class="rights">
+                <h1>LinkedIn News</h1>
+                <p>Top stories</p>
+                <h4>Apple to debut iPhone 17 on Sept. 9</h4>
+                <p>1h ago . 112,971 readers</p>
+                <h4>Is vibe coding the future?</h4>
+                <p>5h ago. 5931 readers</p>
+                <h4>Vaishno Devi landslide: Death toll rises</h4>
+                <p>5h ago. 571 readers</p>
+                <h4>Indians rethink the U.S. education</h4>
+                <p>8h ago. 542 readers</p>
+                <h4>India wakes up to 50% US tariffs</h4>
+                <p>9h ago. 452 readers</p>
+                <h5>Show more ></h5>
+                <h6>Today's puzzles</h6>
+                <div class="xx">
+                    <div class="x">
+                        <img class="ss" src="sud.png" alt="">
+                    </div>
+                    <div class="tt">
+                        <h3>Mini sudoku</h3>
+                        <h6>Crafted by the originators of </h6>
+                        <h6> "Sudoku" and the 3x</h6>
+                        <h6> World Sudoku Champion</h6>
+
+                    </div>
+                    <div class="m">
+                        <h1>></h1>
+                    </div>
+                </div>
+
+                <div class="yy">
+                    <div class="y">
+                        <img class="ss" src="ek.png" alt="">
+                    </div>
+                    <div class="ta">
+                        <h3>A quick brain teaser</h3>
+                        <h6>Solve in 60s or less!</h6>
+
+                        <p><i class="fa-solid fa-eye-slash"></i> Score is private to you</p>
+
+                    </div>
+                    <h1>></h1>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="sr">
+            <div class="cs">
+                <div class="tan">
+                    <p>sara,Unlock your full potential with premium</p>
+
+                </div>
+
+                <div class="sa">
+                    <p><i class="fa-solid fa-circle-user"></i></p>
+                    <p><img class="pa" src="p.png" alt="">Premium</p>
+
+
+
+                </div>
+                <div class="h">
+                    See who's viewed your profile in last 365 days
+                </div>
+                <div class="ha">
+                    Try for Free
+                </div>
+            </div>
+            <div class="q">
+                <p>Try LinkedIn on the windows App</p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
